@@ -1,0 +1,77 @@
+.side-form{
+    -fx-background-color:#000000;
+    -fx-border-color:#000000;
+    -fx-border-width: 0px 0px 0px 0px
+}
+.title-form{
+
+    -fx-background-color: linear-gradient(to right,#ffffff, #03ddff,#000000,#000000,#ff037d,#ffffff);
+    -fx-border-color:#ffffff;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-transition: -fx-background-color 3s;
+}
+.login-form{
+    -fx-background-color:linear-gradient(to top right,#03ddff,#ffffff,#ffffff,#ffffff,#ff05c5);
+}
+.signup-form{
+    -fx-background-color:linear-gradient(to top left,#000000,#7105f5,#ffffff,#ffffff,#ffffff,#16b9f0,#000000);
+}
+.side-btn{
+    -fx-background-color: transparent;
+    -fx-text-fill:#ffffff;
+}
+.side-btn:hover{
+    -fx-text-fill:linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, reflect, #01d9ff 0.0%, #01d9ff 0.6729%, #faecec 46.4334%, #ef0cd1 100.0%);
+}
+.login-btn{
+    -fx-background-color:#000000;
+    -fx-border-color: #000000;
+    -fx-text-fill:#ffffff;
+    -fx-background-radius:2px;
+    -fx-border-radius:2px;
+    -fx-transition: -fx-background-color 3s;
+}
+.login-btn:hover{
+    -fx-background-color: #ffffff;
+    -fx-text-fill:#000000;
+}
+.login-btn.selected{
+    -fx-background-color: #ffffff;
+    -fx-text-fill:#000000;
+}
+.textfield{
+    -fx-background-color:#ffffff;
+    -fx-border-color:#000000;
+    -fx-border-radius:3px;
+    -fx-font-size:14px;
+}
+.textfield:focused{
+    -fx-background-color:#ffffff;
+    -fx-border-color:#000000;
+    -fx-font-family:Monotxt_IV50;
+    -fx-font-size:14px;
+}
+.passwordfield{
+    -fx-background-color:#ffffff;
+    -fx-border-color:#000000;
+    -fx-border-radius:3px;
+}
+.passwordfield:focused{
+    -fx-background-color:#ffffff;
+    -fx-border-color:#000000;
+}
+.close{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+}
+.closeHover{
+    -fx-background-color:#d62b22;
+    -fx-font-color:#f0f2f5;
+    -fx-background-radius:0;
+}
+
+.main-form {
+    -fx-padding: 20px; /* Increase padding if needed to show full glow */
+    -fx-effect: dropshadow(gaussian, purple, 25, 0, 0, 0); /* Neon glow effect */
+    -fx-effect: dropshadow(gaussian, cyan, 50, 0, 0, 0); /* Neon glow effect */
+}

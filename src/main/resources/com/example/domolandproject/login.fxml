@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="main-form" stylesheets="@loginDesign.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.domolandproject.loginController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="416.0" prefWidth="616.0" stylesheets="@loginDesign.css">
+         <children>
+            <AnchorPane fx:id="login_form" layoutY="7.0" prefHeight="400.0" prefWidth="300.0" styleClass="login-form" stylesheets="@loginDesign.css" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="68.0" layoutY="66.0" prefHeight="30.0" prefWidth="158.0" text="Sign In ">
+                     <font>
+                        <Font name="Bank Gothic Medium BT" size="23.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="login_username" layoutX="68.0" layoutY="122.0" prefHeight="38.0" prefWidth="164.0" promptText="Username" styleClass="textfield" stylesheets="@loginDesign.css">
+                     <font>
+                        <Font name="Bank Gothic Medium BT" size="12.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="login_password" layoutX="68.0" layoutY="181.0" prefHeight="38.0" prefWidth="164.0" promptText="Password" styleClass="passwordfield" stylesheets="@loginDesign.css">
+                     <font>
+                        <Font name="Bank Gothic Medium BT" size="12.0" />
+                     </font>
+                  </PasswordField>
+                  <Button fx:id="login_btn" layoutX="68.0" layoutY="247.0" mnemonicParsing="false" onAction="#login" prefHeight="38.0" prefWidth="164.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="Login" textFill="WHITE">
+                     <font>
+                        <Font name="Bank Gothic Light BT" size="19.0" />
+                     </font>
+                     <effect>
+                        <Glow level="0.0" />
+                     </effect>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="signup_form" prefHeight="400.0" prefWidth="300.0" styleClass="signup-form" stylesheets="@loginDesign.css">
+               <children>
+                  <Label alignment="CENTER" layoutX="68.0" layoutY="66.0" prefHeight="30.0" prefWidth="158.0" text="Sign Up">
+                     <font>
+                        <Font name="Bank Gothic Medium BT" size="23.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="signup_email" layoutX="68.0" layoutY="122.0" prefHeight="38.0" prefWidth="164.0" promptText="Email Address" styleClass="textfield" stylesheets="@loginDesign.css">
+                     <font>
+                        <Font name="Bank Gothic Medium BT" size="12.0" />
+                     </font></TextField>
+                  <PasswordField fx:id="signup_password" layoutX="68.0" layoutY="229.0" prefHeight="38.0" prefWidth="164.0" promptText="Password" styleClass="textfield" stylesheets="@loginDesign.css">
+                     <font>
+                        <Font name="Bank Gothic Medium BT" size="12.0" />
+                     </font></PasswordField>
+                  <Button fx:id="signup_btn" layoutX="68.0" layoutY="289.0" mnemonicParsing="false" onAction="#signUp" prefHeight="38.0" prefWidth="164.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="Sign up" textFill="WHITE">
+                     <font>
+                        <Font name="Bank Gothic Light BT" size="19.0" />
+                     </font>
+                     <effect>
+                        <Glow level="0.0" />
+                     </effect>
+                  </Button>
+                  <TextField fx:id="signup_username" layoutX="68.0" layoutY="175.0" prefHeight="38.0" prefWidth="164.0" promptText="Username" styleClass="textfield" stylesheets="@loginDesign.css">
+                     <font>
+                        <Font name="Bank Gothic Medium BT" size="12.0" />
+                     </font></TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="sub_form" layoutX="0.19999999999999996" prefHeight="400.0" prefWidth="300.0" styleClass="side-form" stylesheets="@loginDesign.css" AnchorPane.leftAnchor="0.19999999999999996" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="300.0" fitWidth="333.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Images/loginPic.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-2.0" layoutY="316.0" prefHeight="35.0" prefWidth="302.0" styleClass="title-form" stylesheets="@loginDesign.css" text="Domoland" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Bank Gothic Medium BT" size="27.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.3777777850627899" green="0.9066666960716248" blue="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.006729475100942127">
+                                 <color>
+                                    <Color red="0.3777777850627899" green="0.9066666960716248" blue="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.07133243606998653">
+                                 <color>
+                                    <Color red="0.003703703638166189" green="0.8505555391311646" blue="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.19504644979155045">
+                                 <color>
+                                    <Color red="0.045499999076128006" green="0.31428489089012146" blue="0.9100000262260437" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.3483767192988216">
+                                 <color>
+                                    <Color red="0.009999999776482582" green="1.0" blue="0.3253426253795624" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.4921905262121262">
+                                 <color>
+                                    <Color red="0.8282806873321533" green="0.9157894849777222" blue="0.04070175439119339" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.5989232839838493">
+                                 <color>
+                                    <Color red="0.9789473414421082" green="0.9245613813400269" blue="0.9245613813400269" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.7118537241900009">
+                                 <color>
+                                    <Color red="0.9100000262260437" green="0.045499999076128006" blue="0.10803362727165222" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.8277254374158812">
+                                 <color>
+                                    <Color red="0.9368420839309692" green="0.04510721191763878" blue="0.8179441094398499" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.9">
+                                 <color>
+                                    <Color red="0.9300000071525574" green="0.6848245859146118" blue="0.055799998342990875" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9300000071525574" green="0.6848245859146118" blue="0.055799998342990875" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <effect>
+                        <Glow level="0.0" />
+                     </effect>
+                  </Label>
+                  <Button fx:id="create_account_btn" layoutX="59.0" layoutY="360.0" mnemonicParsing="false" onAction="#signUpSlider" prefHeight="26.0" prefWidth="192.0" styleClass="side-btn" stylesheets="@loginDesign.css" text="Create Account">
+                     <font>
+                        <Font name="Bank Gothic Light BT" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="moving_login_btn" layoutX="59.0" layoutY="360.0" mnemonicParsing="false" onAction="#loginSlider" prefHeight="26.0" prefWidth="192.0" styleClass="side-btn" stylesheets="@loginDesign.css" text="Login" visible="false">
+                     <font>
+                        <Font name="Bank Gothic Light BT" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="closeWhite" layoutX="563.0" minHeight="0.0" minWidth="0.0" mnemonicParsing="false" onAction="#close" prefHeight="27.0" prefWidth="47.0" styleClass="close" stylesheets="@loginDesign.css" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <graphic>
+                        <ImageView fitHeight="12.0" fitWidth="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../Images/white_close.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="closeBlack" layoutY="3.2" minHeight="0.0" minWidth="0.0" mnemonicParsing="false" onAction="#close" prefHeight="27.0" prefWidth="47.0" styleClass="close" stylesheets="@loginDesign.css" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <graphic>
+                        <ImageView fitHeight="12.0" fitWidth="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../Images/black_close.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="closeRed" layoutX="563.0" layoutY="10.0" minHeight="0.0" minWidth="0.0" mnemonicParsing="false" onAction="#close" prefHeight="27.0" prefWidth="47.0" styleClass="closeHover" stylesheets="@loginDesign.css" visible="false" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <graphic>
+                        <ImageView fitHeight="12.0" fitWidth="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../Images/white_close.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </AnchorPane>
+   </children>
+</StackPane>
